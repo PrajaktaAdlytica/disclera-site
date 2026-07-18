@@ -1,0 +1,126 @@
+.brand-logo {
+  display: block;
+  width: 132px;
+  height: auto;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+}
+
+.arrow {
+  display: block;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.menu-toggle {
+  place-items: center;
+  padding: 0;
+  color: var(--espresso);
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: none;
+}
+
+.icon-control {
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.icon-control:focus-visible,
+.menu-toggle:focus-visible,
+.footer-socials a:focus-visible {
+  outline: 3px solid var(--sage);
+  outline-offset: 2px;
+}
+
+.window-lock {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mini-brand {
+  height: 19px;
+}
+
+.mini-brand img {
+  display: block;
+  width: 82px;
+  height: auto;
+}
+
+.side-item > svg {
+  width: 12px;
+  flex: none;
+  color: #87968d;
+}
+
+.side-item.active > svg,
+.product-detail li > svg,
+.faq-item button > svg {
+  color: var(--green-dark);
+}
+
+.panel-title > svg {
+  color: #a2aea6;
+}
+
+.product-detail li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.product-detail li > svg {
+  flex: none;
+}
+
+.activity-icon svg,
+.float-icon svg {
+  display: block;
+}
+
+.faq-item button > svg {
+  flex: none;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.footer-socials a {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #40564b;
+  border-radius: 50%;
+  color: #aebfb4;
+  transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.footer-socials a:hover {
+  color: var(--pistachio);
+  border-color: var(--sage);
+  background: rgba(102, 128, 106, 0.16);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: grid;
+  }
+}

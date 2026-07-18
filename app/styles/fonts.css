@@ -1,0 +1,7 @@
+.entry-font-display {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+}
+
+.entry-font-body {
+  font-family: var(--font-entry-inter), Arial, sans-serif;
+}
