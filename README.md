@@ -27,8 +27,11 @@ Open `http://localhost:3000` unless the terminal reports another port.
 ```bash
 npm run lint
 npm run build
+npm run build:vercel
 npm test
 ```
+
+`build:vercel` runs the standard Next.js production build used by Vercel. The default `build` and `dev` commands preserve the local Vinext workflow.
 
 ## Routes
 

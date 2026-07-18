@@ -48,7 +48,8 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa6";
-import { SiX, SiYoutube, type IconType } from "react-icons/si";
+import type { IconType } from "react-icons";
+import { SiX, SiYoutube } from "react-icons/si";
 
 const icons = {
   archive: Archive,
@@ -102,7 +103,7 @@ export type IconName = keyof typeof icons;
 
 type IconProps = {
   name: IconName;
-  size?: 12 | 14 | 16 | 18 | 20 | 24;
+  size?: number;
   strokeWidth?: number;
   label?: string;
   className?: string;
@@ -129,7 +130,7 @@ const socialIcons = {
 
 export type SocialIconName = keyof typeof socialIcons;
 
-export function SocialIcon({ name, size = 18, className }: { name: SocialIconName; size?: 16 | 18 | 20; className?: string }) {
+export function SocialIcon({ name, size = 18, className }: { name: SocialIconName; size?: number; className?: string }) {
   const Glyph = socialIcons[name];
   return <Glyph aria-hidden="true" className={className} size={size} />;
 }
@@ -137,7 +138,7 @@ export function SocialIcon({ name, size = 18, className }: { name: SocialIconNam
 export type IconButtonProps = ComponentPropsWithoutRef<"button"> & {
   icon: IconName;
   label: string;
-  iconSize?: 14 | 16 | 18 | 20 | 24;
+  iconSize?: number;
 };
 
 export function IconButton({ icon, label, iconSize = 18, className = "", ...props }: IconButtonProps) {

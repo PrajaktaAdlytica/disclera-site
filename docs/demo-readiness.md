@@ -53,6 +53,7 @@ This review covers the demo homepage, Collect, Suppliers, Report, Request demo a
 ```bash
 npm run lint
 npm run build
+npm run build:vercel
 npm test
 ```
 
