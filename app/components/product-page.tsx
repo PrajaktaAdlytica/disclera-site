@@ -56,8 +56,8 @@ const products: Record<ProductKey, ProductContent> = {
       { title: "Evidence packs", copy: "Export source files, metadata, lineage and approvals in one reviewer-ready pack.", icon: "download" },
     ],
     quote: "Collect replaced a maze of shared drives with one evidence trail our reviewers can actually follow.",
-    person: "Elena Rossi",
-    role: "ESG Reporting Lead · Asteria Foods",
+    person: "Agnieszka Zielińska",
+    role: "ESG Reporting Lead · Mazovia Żywność",
     metric: "37 verified sources in week one",
   },
   suppliers: {
@@ -84,8 +84,8 @@ const products: Record<ProductKey, ProductContent> = {
       { title: "End-to-end lineage", copy: "Carry validated supplier data into reporting with its source and timestamp intact.", icon: "link" },
     ],
     quote: "Our suppliers know what to provide, why it matters and when it is due. The quality difference is immediate.",
-    person: "Marta Novak",
-    role: "Head of Sustainability · Lumen Industries",
+    person: "Marta Nowak",
+    role: "Head of Sustainability · Lumen Polska",
     metric: "74% response rate",
   },
   report: {
@@ -112,8 +112,8 @@ const products: Record<ProductKey, ProductContent> = {
       { title: "Assurance workspace", copy: "Give reviewers a complete evidence index without opening your internal workspace.", icon: "checkCircle" },
     ],
     quote: "We moved from scattered evidence to clear, reviewable disclosures. The source trail changed our audit conversations.",
-    person: "Jonas Weber",
-    role: "Finance Director · Nordform",
+    person: "Jakub Wójcik",
+    role: "Finance Director · Północna Forma",
     metric: "98% evidence completeness",
   },
 };
@@ -132,8 +132,8 @@ function ProductVisual({ product }: { product: ProductKey }) {
     return (
       <div className="product-hero-visual product-network-visual">
         <Image src={content.image} width={1774} height={887} alt={content.imageAlt} priority unoptimized />
-        <div className="product-float-card float-invite"><Icon name="mail" size={16} /><span><small>Invitation</small><strong>Blue Steel GmbH</strong><em>View request</em></span></div>
-        <div className="product-float-card float-response"><Icon name="checkCircle" size={16} /><span><small>Response received</small><strong>Nordic Components AB</strong><em>Verified</em></span></div>
+        <div className="product-float-card float-invite"><Icon name="mail" size={16} /><span><small>Invitation</small><strong>Błękitna Stal</strong><em>View request</em></span></div>
+        <div className="product-float-card float-response"><Icon name="checkCircle" size={16} /><span><small>Response received</small><strong>Komponenty Północ</strong><em>Verified</em></span></div>
       </div>
     );
   }

@@ -38,34 +38,34 @@ const navMenus = {
 } satisfies Record<string, readonly (readonly [string, string, string, IconName])[]>;
 
 const supplierCards = [
-  { name: "Greensteel GmbH", country: "Germany", progress: "3/3", tone: "sage" },
-  { name: "Alpina Components", country: "Austria", progress: "2/3", tone: "rose" },
-  { name: "Nordic Textiles", country: "Sweden", progress: "3/3", tone: "paper" },
-  { name: "Luma Packaging", country: "Poland", progress: "1/3", tone: "blue" },
+  { name: "Zielona Stal", country: "Poland", progress: "3/3", tone: "sage" },
+  { name: "Alpina Polska", country: "Poland", progress: "2/3", tone: "rose" },
+  { name: "Bałtyk Tekstylia", country: "Poland", progress: "3/3", tone: "paper" },
+  { name: "Luma Opakowania", country: "Poland", progress: "1/3", tone: "blue" },
 ];
 
 const testimonials = [
   {
     quote: "Disclera gave us control and clarity. We cut reporting time by 40% and walk into audits with confidence.",
-    initials: "SL",
-    name: "Sophie Laurent",
-    role: "Head of Sustainability · Rivage Group",
+    initials: "ZL",
+    name: "Zofia Lewandowska",
+    role: "Head of Sustainability · Grupa Nadwiślańska",
     metric: "40% faster reporting",
     tone: "rose",
   },
   {
     quote: "Our suppliers now understand exactly what is needed. Response quality is higher, and follow-up no longer consumes the whole team.",
     initials: "MN",
-    name: "Marta Novak",
-    role: "Procurement Director · Lumen Industries",
+    name: "Marta Nowak",
+    role: "Procurement Director · Lumen Polska",
     metric: "74% response rate",
     tone: "blue",
   },
   {
     quote: "Finance, sustainability and assurance finally review the same evidence trail. That changed our reporting cycle completely.",
     initials: "JW",
-    name: "Jonas Weber",
-    role: "Finance Controller · Nordform",
+    name: "Jakub Wójcik",
+    role: "Finance Controller · Północna Forma",
     metric: "One evidence trail",
     tone: "sage",
   },
@@ -560,7 +560,7 @@ export default function Home() {
               <div className="trust-stat"><strong>EU</strong><span>Data residency, always</span></div>
             </div>
           </div>
-          <div className="company-strip shell" id="company"><span>RIVAGE GROUP</span><span>NORDFORM</span><span>GREENSTEEL</span><span>ALPINA</span><span>LUMA</span></div>
+          <div className="company-strip shell" id="company"><span>GRUPA NADWIŚLAŃSKA</span><span>PÓŁNOCNA FORMA</span><span>ZIELONA STAL</span><span>ALPINA POLSKA</span><span>LUMA OPAKOWANIA</span></div>
         </div>
       </section>
 
